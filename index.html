@@ -1,0 +1,875 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="en" dir="ltr"
+      class="no-js multi-step mac safari desktop page--no-banner page--logo-main page--show  card-fields">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, height=device-height, minimum-scale=1.0, user-scalable=0">
+
+    <title>Title</title>
+
+
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" media="all" href="files/oldie.css"/>
+    <![endif]-->
+
+    <!--[if gte IE 9]><!-->
+    <link rel="stylesheet" media="all" href="files/v2-ltr-edge.css"/>
+    <link rel="stylesheet" media="all" href="files/custom.css"/>
+
+    <!--<![endif]-->
+
+
+    <script src="files/checkout.js"></script>
+
+    <script src="http://www.paypalobjects.com/api/checkout.js" async="async"></script>
+
+    <style>
+
+        .field.field--show-floating-label input {
+
+            padding: 1.5em 0.8em 0.38em !important;
+
+        }
+
+        .field.padding-field input {
+
+            padding: 1.5em 0.8em 0.38em !important;
+
+        }
+
+        .field__label {
+
+            /* 		   opacity: 0!important; */
+
+        }
+
+    </style>
+
+
+</head>
+
+<body>
+
+<div class="banner" data-header>
+    <div class="wrap">
+
+        <a href="#" class="logo logo--left">
+            <h1 class="logo__text visually-hidden">Opodop</h1>
+            <img alt="Opodop" class="logo__image logo__image--large" src="files/logo.png"/>
+        </a>
+
+    </div>
+</div>
+
+<button class="order-summary-toggle order-summary-toggle--show" data-drawer-toggle="[data-order-summary]">
+    <div class="wrap">
+        <div class="order-summary-toggle__inner">
+            <div class="order-summary-toggle__icon-wrapper">
+                <svg width="20" height="19" xmlns="http://www.w3.org/2000/svg" class="order-summary-toggle__icon">
+                    <path d="M17.178 13.088H5.453c-.454 0-.91-.364-.91-.818L3.727 1.818H0V0h4.544c.455 0 .91.364.91.818l.09 1.272h13.45c.274 0 .547.09.73.364.18.182.27.454.18.727l-1.817 9.18c-.09.455-.455.728-.91.728zM6.27 11.27h10.09l1.454-7.362H5.634l.637 7.362zm.092 7.715c1.004 0 1.818-.813 1.818-1.817s-.814-1.818-1.818-1.818-1.818.814-1.818 1.818.814 1.817 1.818 1.817zm9.18 0c1.004 0 1.817-.813 1.817-1.817s-.814-1.818-1.818-1.818-1.818.814-1.818 1.818.814 1.817 1.818 1.817z"/>
+                </svg>
+            </div>
+            <div class="order-summary-toggle__text order-summary-toggle__text--show">
+                <span>Show order summary</span>
+                <svg width="11" height="6" xmlns="http://www.w3.org/2000/svg" class="order-summary-toggle__dropdown"
+                     fill="#000">
+                    <path d="M.504 1.813l4.358 3.845.496.438.496-.438 4.642-4.096L9.504.438 4.862 4.534h.992L1.496.69.504 1.812z"/>
+                </svg>
+            </div>
+            <div class="order-summary-toggle__text order-summary-toggle__text--hide">
+                <span>Hide order summary</span>
+                <svg width="11" height="7" xmlns="http://www.w3.org/2000/svg" class="order-summary-toggle__dropdown"
+                     fill="#000">
+                    <path d="M6.138.876L5.642.438l-.496.438L.504 4.972l.992 1.124L6.138 2l-.496.436 3.862 3.408.992-1.122L6.138.876z"/>
+                </svg>
+            </div>
+            <div class="order-summary-toggle__total-recap total-recap" data-order-summary-section="toggle-total-recap">
+                <span class="total-recap__final-price" data-checkout-payment-due-target="7997">$79.97</span>
+            </div>
+        </div>
+    </div>
+</button>
+
+
+<div class="content" data-content>
+    <div class="wrap">
+        <div class="sidebar" role="complementary">
+            <div class="sidebar__header">
+
+                <a href="#" class="logo logo--left">
+                    <h1 class="logo__text visually-hidden">Opodop</h1>
+                    <img alt="Opodop" class="logo__image logo__image--large" src="files/logo.png"/>
+                </a>
+
+            </div>
+            <div class="sidebar__content">
+                <div class="order-summary order-summary--is-collapsed" data-order-summary>
+                    <h2 class="visually-hidden">Order summary</h2>
+
+                    <div class="order-summary__sections">
+                        <div class="order-summary__section order-summary__section--product-list">
+                            <div class="order-summary__section__content">
+                                <table class="product-table">
+                                    <caption class="visually-hidden">Shopping cart</caption>
+                                    <thead>
+                                    <tr>
+                                        <th scope="col"><span class="visually-hidden">Product image</span></th>
+                                        <th scope="col"><span class="visually-hidden">Description</span></th>
+                                        <th scope="col"><span class="visually-hidden">Quantity</span></th>
+                                        <th scope="col"><span class="visually-hidden">Price</span></th>
+                                    </tr>
+                                    </thead>
+                                    <tbody data-order-summary-section="line-items">
+                                    <tr class="product" data-product-id="8984354322" data-variant-id="31396185106"
+                                        data-product-type="Educational Toys">
+                                        <td class="product__image">
+                                            <div class="product-thumbnail">
+                                                <div class="product-thumbnail__wrapper">
+                                                    <img alt="3D Assemble & Scratch Globe"
+                                                         class="product-thumbnail__image" src="files/pr1.jpg"/>
+                                                </div>
+                                                <span class="product-thumbnail__quantity" aria-hidden="true">1</span>
+                                            </div>
+
+                                        </td>
+                                        <td class="product__description">
+
+                                            <span class="product__description__name order-summary__emphasis">3D Assemble & Scratch Globe</span>
+                                            <span class="product__description__variant order-summary__small-text"></span>
+
+                                        </td>
+                                        <td class="product__quantity visually-hidden">
+                                            1
+                                        </td>
+                                        <td class="product__price">
+                                            <span class="order-summary__emphasis">$19.99</span>
+                                        </td>
+                                    </tr>
+                                    <tr class="product" data-product-id="8984684626" data-variant-id="31396994130"
+                                        data-product-type="Lamps">
+                                        <td class="product__image">
+                                            <div class="product-thumbnail">
+                                                <div class="product-thumbnail__wrapper">
+                                                    <img alt="3D LED Colorful Sailboat Night Light"
+                                                         class="product-thumbnail__image" src="files/pr2.jpg"/>
+                                                </div>
+                                                <span class="product-thumbnail__quantity" aria-hidden="true">2</span>
+                                            </div>
+
+                                        </td>
+                                        <td class="product__description">
+                                            <span class="product__description__name order-summary__emphasis">3D LED Colorful Sailboat Night Light</span>
+                                            <span class="product__description__variant order-summary__small-text"></span>
+
+                                        </td>
+                                        <td class="product__quantity visually-hidden">
+                                            2
+                                        </td>
+                                        <td class="product__price">
+                                            <span class="order-summary__emphasis">$59.98</span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+
+                                <div class="order-summary__scroll-indicator">
+                                    Scroll for more items
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="12" viewBox="0 0 10 12">
+                                        <path d="M9.817 7.624l-4.375 4.2c-.245.235-.64.235-.884 0l-4.375-4.2c-.244-.234-.244-.614 0-.848.245-.235.64-.235.884 0L4.375 9.95V.6c0-.332.28-.6.625-.6s.625.268.625.6v9.35l3.308-3.174c.122-.117.282-.176.442-.176.16 0 .32.06.442.176.244.234.244.614 0 .848"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="order-summary__section order-summary__section--total-lines"
+                             data-order-summary-section="payment-lines">
+                            <table class="total-line-table">
+                                <caption class="visually-hidden">Cost summary</caption>
+                                <thead>
+                                <tr>
+                                    <th scope="col"><span class="visually-hidden">Description</span></th>
+                                    <th scope="col"><span class="visually-hidden">Price</span></th>
+                                </tr>
+                                </thead>
+                                <tbody class="total-line-table__tbody">
+                                <tr class="total-line total-line--subtotal">
+                                    <td class="total-line__name">Subtotal</td>
+                                    <td class="total-line__price">
+						            <span class="order-summary__emphasis" data-checkout-subtotal-price-target="7997">
+						              $79.97
+						            </span>
+                                    </td>
+                                </tr>
+
+                                <tr class="total-line total-line--shipping">
+                                    <td class="total-line__name">Shipping</td>
+                                    <td class="total-line__price">
+						              <span class="order-summary__emphasis" data-checkout-total-shipping-target="0">
+						                —
+						              </span>
+                                    </td>
+                                </tr>
+
+                                </tbody>
+
+                                <tfoot class="total-line-table__footer">
+                                <tr class="total-line">
+                                    <td class="total-line__name payment-due-label">
+                                        <span class="payment-due-label__total">Total</span>
+                                        <span class="payment-due-label__taxes hidden" data-checkout-taxes>
+						              Including <span data-checkout-total-taxes-target="0">$0.00</span> in taxes
+						            </span>
+                                    </td>
+                                    <td class="total-line__price payment-due">
+                                        <span class="payment-due__currency">USD</span>
+                                        <span class="payment-due__price" data-checkout-payment-due-target="7997">
+						            $79.97
+						          </span>
+                                    </td>
+                                </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="main" role="main">
+            <div class="main__header">
+
+                <a href="#" class="logo logo--left">
+                    <h1 class="logo__text visually-hidden">Opodop</h1>
+                    <img alt="Opodop" class="logo__image logo__image--large" src="files/logo.png"/>
+                </a>
+
+                <!--  Is dokumentacijos kodas -->
+
+                <script src="https://www.paypalobjects.com/api/checkout.js"></script>
+                <div id="paypal-button-container"></div>
+                <script>
+
+                    //var name = document.getElementById('checkout[shipping_address][first_name]');
+                    var paypal_name     =  document.getElementsByName('checkout[shipping_address][first_name]');
+                    var paypal_address  = document.getElementsByName('checkout[shipping_address][address1]');
+
+
+                    // Render the PayPal button
+
+                    paypal.Button.render({
+
+                        // Set your environment
+
+                        env: 'sandbox', // sandbox | production
+
+                        // Specify the style of the button
+
+                        style: {
+                            layout: 'vertical',  // horizontal | vertical
+                            size:   'medium',    // medium | large | responsive
+                            shape:  'rect',      // pill | rect
+                            color:  'gold'       // gold | blue | silver | black
+                        },
+
+                        // Specify allowed and disallowed funding sources
+                        //
+                        // Options:
+                        // - paypal.FUNDING.CARD
+                        // - paypal.FUNDING.CREDIT
+                        // - paypal.FUNDING.ELV
+
+                        funding: {
+                            allowed: [ paypal.FUNDING.CARD, paypal.FUNDING.CREDIT ],
+                            disallowed: [ ]
+                        },
+
+                        // PayPal Client IDs - replace with your own
+                        // Create a PayPal app: https://developer.paypal.com/developer/applications/create
+
+                        client: {
+                            sandbox:    'AZDxjDScFpQtjWTOUtWKbyN_bDt4OgqaF4eYXlewfBP4-8aqX3PiV8e1GWU6liB2CUXlkA59kJXE7M6R',
+                            production: 'AdaiT-O1GBcEAESr2JVCr_4raS9Qndfte1j1SijiGzjFzLV3327EEFqHOUl5BmGfRJaxOWxR_wG0oAER'
+                        },
+
+                        payment: function(data, actions)
+                        {
+
+                            return actions.payment.create({
+                                payment: {
+                                    transactions: [
+                                        {
+
+                                            "amount": {
+                                                "total": "30.11",
+                                                "currency": "USD",
+                                                "details": {
+                                                    "subtotal": "30.00",
+                                                    "tax": "0.07",
+                                                    "shipping": "0.03",
+                                                    "handling_fee": "1.00",
+                                                    "shipping_discount": "-1.00",
+                                                    "insurance": "0.01"
+                                                }
+                                            },
+                                            "description": "The payment transaction description.",
+                                            "custom": "EBAY_EMS_90048630024435",
+                                            "invoice_number": "48787589673",
+                                            "payment_options": {
+                                                "allowed_payment_method": "INSTANT_FUNDING_SOURCE"
+                                            },
+                                            "soft_descriptor": "ECHI5786786",
+                                            "item_list": {
+                                                "items": [
+                                                    {
+                                                        "name": "hat",
+                                                        "description": "Brown hat.",
+                                                        "quantity": "5",
+                                                        "price": "3",
+                                                        "tax": "0.01",
+                                                        "sku": "1",
+                                                        "currency": "USD"
+                                                    },
+                                                    {
+                                                        "name": "handbag",
+                                                        "description": "Black handbag.",
+                                                        "quantity": "1",
+                                                        "price": "15",
+                                                        "tax": "0.02",
+                                                        "sku": "product34",
+                                                        "currency": "USD"
+                                                    }
+                                                ],
+                                                "shipping_address": {
+                                                    "recipient_name": paypal_name[0].value,
+                                                    "line1": paypal_address[0].value,
+                                                    "line2": "Unit #34",
+                                                    "city": "San Jose",
+                                                    "country_code": "US",
+                                                    "postal_code": "95131",
+                                                    "phone": "011862212345678",
+                                                    "state": "CA"
+                                                }
+                                            }
+
+                                        }
+                                    ]
+                                }
+                            });
+                        },
+
+                        onAuthorize: function(data, actions) {
+                            return actions.payment.execute().then(function() {
+                                window.alert('Payment Complete!');
+                            });
+                        }
+
+                    }, '#paypal-button-container');
+
+                </script>
+
+
+
+
+
+                <!--  Atsiusta kodas -->
+
+                <div data-alternative-payments>
+                    <div class="alt-payment-list-container">
+                        <ul class="alt-payment-list ">
+
+                            <li class="alt-payment-list__item alt-payment-list__item--paypal">
+                                <a class="alt-payment-list__item__link" id="paypal-express-checkout-btn"
+                                   href="#redirect"><img alt="Checkout with: PayPal"
+                                                         class="alt-payment-list__item__logo"
+                                                         src="files/easy-checkout-btn-paypal.png"/></a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="alternative-payment-separator" data-alternative-payment-separator>
+			      <span class="alternative-payment-separator__content">
+			        OR
+			      </span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="main__content">
+                <div class="step" data-step="contact_information">
+                    <form class="edit_checkout" data-customer-information-form="true" accept-charset="UTF-8"
+                          method="post" name="checkout-form">
+
+                        <div class="step__sections">
+
+                            <div class="section section--contact-information">
+                                <div class="section__header">
+                                    <div class="layout-flex layout-flex--tight-vertical layout-flex--loose-horizontal layout-flex--wrap">
+                                        <h2 class="section__title layout-flex__item layout-flex__item--stretch">Customer
+                                            information</h2>
+
+                                    </div>
+                                </div>
+
+                                <div class="section__content">
+                                    <div class="fieldset">
+                                        <div class="field field--required">
+                                            <label class="field__label" for="checkout_email">Email</label>
+                                            <div class="field__input-wrapper field__input-wrapper--with-loader">
+                                                <input placeholder="Email" autocapitalize="off" spellcheck="false"
+                                                       autocomplete="shipping email" data-autofocus="true"
+                                                       data-email-input="true" data-backup="customer_email"
+                                                       class="field__input" size="30" type="email"
+                                                       name="checkout[email]" id="checkout_email"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="section section--shipping-address">
+
+                                <div class="section__header">
+                                    <h2 class="section__title">
+                                        Shipping address
+                                    </h2>
+                                </div>
+
+                                <div class="section__content">
+                                    <div class="fieldset">
+                                        <div class="field--half field" data-address-field="first_name">
+                                            <label class="field__label" for="checkout_shipping_address_first_name">First
+                                                name</label>
+                                            <div class="field__input-wrapper">
+                                                <input placeholder="First name" class="field__input" size="30"
+                                                       type="text" name="checkout[shipping_address][first_name]"
+                                                       id="checkout_shipping_address_first_name"/>
+                                            </div>
+                                        </div>
+                                        <div class="field--half field" data-address-field="last_name">
+                                            <label class="field__label" for="checkout_shipping_address_last_name">Last
+                                                name</label>
+                                            <div class="field__input-wrapper">
+                                                <input placeholder="Last name" class="field__input" size="30"
+                                                       type="text" name="checkout[shipping_address][last_name]"
+                                                       id="checkout_shipping_address_last_name"/>
+                                            </div>
+                                        </div>
+
+                                        <div class="field--two-thirds field">
+                                            <label class="field__label"
+                                                   for="checkout_shipping_address_address1">Address</label>
+                                            <div class="field__input-wrapper">
+                                                <input placeholder="Address" class="field__input" size="30" type="text"
+                                                       name="checkout[shipping_address][address1]"
+                                                       id="checkout_shipping_address_address1"/>
+                                            </div>
+                                        </div>
+                                        <div class="field--third field">
+                                            <label class="field__label" for="checkout_shipping_address_address2">Apt,
+                                                suite, etc. (optional)</label>
+                                            <div class="field__input-wrapper">
+                                                <input placeholder="Apt, suite, etc. (optional)" class="field__input"
+                                                       size="30" type="text" value=""
+                                                       name="checkout[shipping_address][address2]"
+                                                       id="checkout_shipping_address_address2"/>
+                                            </div>
+                                        </div>
+                                        <div data-address-field="city" class="field">
+                                            <label class="field__label"
+                                                   for="checkout_shipping_address_city">City</label>
+                                            <div class="field__input-wrapper">
+                                                <input placeholder="City" class="field__input" size="30" type="text"
+                                                       name="checkout[shipping_address][city]"
+                                                       id="checkout_shipping_address_city"/>
+                                            </div>
+                                        </div>
+                                        <div class="field--three-eights field">
+                                            <label class="field__label"
+                                                   for="checkout_shipping_address_country">Country</label>
+                                            <div class="field__input-wrapper field__input-wrapper--select">
+                                                <select size="1" class="field__input field__input--select"
+                                                        name="checkout[shipping_address][country]"
+                                                        id="checkout_shipping_address_country">
+
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="field--three-eights field">
+                                            <label class="field__label" for="checkout_shipping_address_province">State/Province</label>
+                                            <div class="field__input-wrapper field__input-wrapper--select">
+
+                                                <select size="1" class="field__input field__input--select"
+                                                        name="checkout[shipping_address][province]"
+                                                        id="checkout_shipping_address_province">
+
+                                                </select>
+
+                                            </div>
+                                        </div>
+                                        <div data-address-field="zip" class="field--quarter field">
+                                            <label class="field__label" for="checkout_shipping_address_zip">Postal
+                                                code</label>
+                                            <div class="field__input-wrapper">
+                                                <input placeholder="Postal code" class="field__input field__input--zip"
+                                                       size="30" type="text" name="checkout[shipping_address][zip]"
+                                                       id="checkout_shipping_address_zip"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="section section--shipping-method">
+                                <div class="section__header">
+                                    <h2 class="section__title">Shipping method</h2>
+                                </div>
+
+                                <div class="section__content">
+
+                                    <div class="content-box" data-shipping-methods="">
+
+                                        <div class="content-box__row">
+                                            <div class="radio-wrapper"
+                                                 data-shipping-method="shopify-Free%20Super%20Saver%20Shipping-0.00">
+                                                <div class="radio__input">
+                                                    <input class="input-radio" checked="checked" type="radio"
+                                                           name="checkout[shipping_rate][id]">
+                                                </div>
+                                                <label class="radio__label"
+                                                       for="checkout_shipping_rate_id_shopify-free20super20saver20shipping-000">
+						            <span class="radio__label__primary"
+                                          data-shipping-method-label-title="Free Super Saver Shipping">
+						              Free Super Saver Shipping
+						            </span>
+                                                    <span class="radio__label__accessory content-box__emphasis">FREE</span>
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                        <div class="content-box__row">
+                                            <div class="radio-wrapper">
+                                                <div class="radio__input">
+                                                    <input class="input-radio" type="radio" value="ddddd"
+                                                           name="checkout[shipping_rate][id]">
+                                                </div>
+                                                <label class="radio__label">
+						            <span class="radio__label__primary">
+						              Saver Shipping With 100% Package Insurance
+						            </span>
+                                                    <span class="radio__label__accessory content-box__emphasis">$3.99</span>
+                                                </label>
+                                            </div> <!-- /radio-wrapper-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="section section--payment-method" data-payment-method="">
+                                <div class="section__header">
+                                    <h2 class="section__title">Payment method</h2>
+                                    <p class="section__text">
+                                        All transactions are secure and encrypted.
+                                    </p>
+                                </div>
+
+                                <div class="section__content">
+                                    <div class="hidden notice notice--warning" id="card-fields__processing-error">
+                                        <p class="notice__text">An error occurred while processing the payment
+                                            information. Please try again later.</p>
+                                    </div>
+
+                                    <div>
+                                        <div class="content-box">
+                                            <div class="radio-wrapper content-box__row ">
+                                                <div class="radio__input">
+                                                    <input class="input-radio" aria-expanded="true" type="radio"
+                                                           checked="checked" name="checkout[payment_gateway]"
+                                                           id="pay-creditcard">
+                                                </div>
+
+                                                <label class="radio__label content-box__emphasis">
+                                                    <div class="radio__label__primary">
+                                                        Credit card
+                                                    </div>
+
+                                                    <div class="radio__label__accessory">
+                                                        <span class="visually-hidden">Pay with:</span>
+
+                                                        <ul>
+                                                            <li class="payment-icon payment-icon--visa"
+                                                                data-payment-icon="visa">
+                                                                <span class="visually-hidden">Visa</span>
+                                                            </li>
+                                                            <li class="payment-icon payment-icon--master"
+                                                                data-payment-icon="master">
+                                                                <span class="visually-hidden">Mastercard</span>
+                                                            </li>
+                                                            <li class="payment-icon payment-icon--american-express"
+                                                                data-payment-icon="american-express">
+                                                                <span class="visually-hidden">American Express</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                            <div class="card-fields-placeholder-lightness"></div>
+                                            <div class="radio-wrapper content-box__row content-box__row--secondary card-fields-container card-fields-container--loaded card-fields-container--transitioned creditcard">
+                                                <div class="blank-slate hidden" data-blank-slate="">
+                                                    <i class="blank-slate__icon icon icon--offsite"></i>
+                                                    <p>You will be redirected to a payment gateway in order to add your
+                                                        payment information.</p>
+                                                </div>
+
+                                                <div class="blank-slate hidden" id="card-fields__loading-error">
+                                                    <i class="blank-slate__icon icon icon--card-fields-error"></i>
+                                                    <p>Credit and Debit card payments aren't available right now.<br>Please
+                                                        <a href="javascript:window.location.reload();">refresh this
+                                                            page</a> or try a different payment method.</p>
+                                                </div>
+
+                                                <div class="fieldset" data-credit-card-fields="" data-slate=""
+                                                     dir="ltr">
+
+                                                    <div class="field field--required field--show-floating-label">
+
+                                                        <div class="field__input-wrapper field__input-wrapper--icon-right">
+
+                                                            <label class="field__label"
+                                                                   for="checkout_credit_card_number">Card number</label>
+
+                                                            <div class="field__input field__input--iframe-container"
+                                                                 data-card-fields="number"
+                                                                 data-card-field-placeholder="Card number"
+                                                                 aria-describedby="error-for-number">
+
+                                                                <input id="cc_number" name="cc_number" type="tel"
+                                                                       class="input-placeholder-color--lvl-34 input-cc-number"
+                                                                       placeholder="Card number"
+                                                                       style="color: rgb(51, 51, 51); font-family: 'Helvetica Neue'; padding: 0.94em 0.8em; transition: padding 0.2s ease-out; -webkit-transition: padding 0.2s ease-out;">
+
+
+                                                            </div>
+
+                                                            <span id="credit_card_number_tooltip"
+                                                                  class="field__icon icon icon--lock">
+													<span class="visually-hidden">Secure field</span>
+												</span>
+
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="field--half field  " data-credit-card-name="true">
+
+                                                        <div class="field__input-wrapper">
+
+                                                            <label class="field__label" for="checkout_credit_card_name">Name
+                                                                on card</label>
+
+                                                            <div class="field__input field__input--iframe-container"
+                                                                 data-card-fields="name"
+                                                                 data-card-field-placeholder="Name on card"
+                                                                 aria-describedby="error-for-name">
+
+                                                                <input id="cc_name" name="cc_name" type="text"
+                                                                       class="input-placeholder-color--lvl-34"
+                                                                       placeholder="Name on card"
+                                                                       style="color: rgb(51, 51, 51); font-family: 'Helvetica Neue'; padding: 0.94em 0.8em; transition: padding 0.2s ease-out; -webkit-transition: padding 0.2s ease-out;">
+
+                                                            </div>
+
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="field--quarter field" data-credit-card-expiry="true"
+                                                         data-debit-card-alternative-text="Expiry (MM / YY)">
+
+                                                        <div class="field__input-wrapper"><label class="field__label"
+                                                                                                 for="checkout_credit_card_expiry">MM
+                                                            / YY</label>
+                                                            <div class="field__input field__input--iframe-container"
+                                                                 data-card-fields="expiry"
+                                                                 data-card-field-placeholder="MM / YY"
+                                                                 aria-describedby="error-for-expiry">
+
+                                                                <input id="cc_expiry" name="cc_expiry" type="tel"
+                                                                       class="input-placeholder-color--lvl-34 input-cc-date"
+                                                                       placeholder="MM / YY"
+                                                                       style="color: rgb(51, 51, 51); font-family: 'Helvetica Neue'; padding: 0.94em 0.8em; transition: padding 0.2s ease-out; -webkit-transition: padding 0.2s ease-out;">
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="field--quarter field ">
+
+                                                        <div class="field__input-wrapper field__input-wrapper--icon-right">
+                                                            <label class="field__label"
+                                                                   for="checkout_credit_card_verification_value">CVV</label>
+                                                            <div class="field__input field__input--iframe-container"
+                                                                 data-card-fields="verification_value"
+                                                                 data-card-field-placeholder="CVV"
+                                                                 aria-describedby="error-for-verification_value">
+
+                                                                <input id="cc_verification_value"
+                                                                       name="cc_verification_value" type="tel"
+                                                                       class="input-placeholder-color--lvl-34 input-cc-cvv"
+                                                                       placeholder="CVV"
+                                                                       style="color: rgb(51, 51, 51); font-family: 'Helvetica Neue'; padding: 0.94em 0.8em; transition: padding 0.2s ease-out; -webkit-transition: padding 0.2s ease-out;">
+
+                                                            </div>
+
+                                                            <span id="credit_card_verification_value_tooltip"
+                                                                  tabindex="0"
+                                                                  class="field__icon icon icon--question has-tooltip"
+                                                                  role="tooltip">
+									            	<span class="tooltip">
+														<span data-cvv-tooltip="unknown">
+											                3-digit security code usually found on the back of your card. American Express cards have a 4-digit code located on the front.
+											            </span>
+											            <span data-cvv-tooltip="amex" class="hidden">
+											                4-digit security code on the front of your card
+											            </span>
+														<span data-cvv-tooltip="other" class="hidden">
+															3-digit security code on the back of your card
+														</span>
+													</span>
+									          </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="radio-wrapper content-box__row ">
+                                                <div class="radio__input">
+                                                    <input class="input-radio" data-backup="payment_gateway_68341767"
+                                                           aria-expanded="false"
+                                                           aria-controls="payment-gateway-subfields-68341767"
+                                                           type="radio" name="checkout[payment_gateway]"
+                                                           id="pay-paypal">
+                                                </div>
+
+                                                <label class="radio__label content-box__emphasis payment-method-wrapper"
+                                                       for="checkout_payment_gateway_68341767">
+                                                    <div class="radio__label__primary">
+                                                        <img alt="PayPal" class="offsite-payment-gateway-logo"
+                                                             src="files/paypal2.png">
+                                                        <span class="visually-hidden">PayPal</span>
+                                                    </div>
+
+                                                    <div class="radio__label__accessory">
+                                                        <span class="visually-hidden">Pay with:</span>
+
+                                                        <ul data-brand-icons-for-gateway="68341767">
+                                                            <li class="payment-icon payment-icon--visa"
+                                                                data-payment-icon="visa">
+                                                                <span class="visually-hidden">Visa</span>
+                                                            </li>
+                                                            <li class="payment-icon payment-icon--master"
+                                                                data-payment-icon="master">
+                                                                <span class="visually-hidden">Mastercard</span>
+                                                            </li>
+                                                            <li class="payment-icon payment-icon--american-express"
+                                                                data-payment-icon="american-express">
+                                                                <span class="visually-hidden">American Express</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                            <div class="radio-wrapper content-box__row content-box__row--secondary hidden paypal">
+                                                <div class="blank-slate">
+                                                    <i class="blank-slate__icon icon icon--offsite"></i>
+                                                    <p>After clicking "Complete order", you will be redirected to PayPal
+                                                        to complete your purchase securely.</p>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+
+                                    <div data-payment-subform="gift_cards" class="hidden">
+                                        <input value="free" disabled="disabled" size="30" type="hidden"
+                                               name="checkout[payment_gateway]" aria-expanded="false">
+                                        <div class="content-box blank-slate">
+                                            <div class="content-box__row">
+                                                <i class="blank-slate__icon icon icon--free-tag"></i>
+                                                <p>Your order is covered by your gift cards.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div data-payment-subform="free" class="hidden">
+                                        <input value="free" disabled="disabled" size="30" type="hidden"
+                                               name="checkout[payment_gateway]" aria-expanded="false">
+                                        <div class="content-box blank-slate">
+                                            <div class="content-box__row">
+                                                <i class="blank-slate__icon icon icon--free-tag"></i>
+                                                <p>Your order is <strong>free</strong>. No payment is required.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="step__footer">
+
+                            <button name="button" type="submit" class="step__footer__continue-btn btn ">
+                                <span class="btn__content">Complete order</span>
+                                <i class="btn__spinner icon icon--button-spinner"></i>
+                            </button>
+                            <a class="step__footer__previous-link" href="#cart">
+                                <svg class="icon-svg icon-svg--color-accent icon-svg--size-10 previous-link__icon rtl-flip"
+                                     role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10">
+                                    <path d="M8 1L7 0 3 4 2 5l1 1 4 4 1-1-4-4"/>
+                                </svg>
+                                <span class="step__footer__previous-link-content">Return to cart</span></a>
+                        </div>
+
+
+                    </form>
+
+                </div>
+
+            </div>
+            <div class="main__footer">
+                <div class="modals"></div>
+
+                <div role="contentinfo" aria-label="Footer">
+                    <p class="copyright-text">
+                        All rights reserved Opodop
+                    </p>
+                </div>
+
+                <div id="dialog-close-title" class="hidden">Close</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="files/cleave.min.js"></script>
+
+<script src="files/countries.js"></script>
+<script src="files/scripts.js"></script>
+
+
+<script src="files/validate.js"></script>
+<script src="files/validate_form.js"></script>
+
+</body>
+</html>
